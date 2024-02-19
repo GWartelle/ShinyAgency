@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
+import Logo from '../../assets/dark-logo.png'
+
+const HeaderWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+`
 
 const StyledLink = styled(Link)`
   padding: 15px;
@@ -14,13 +22,16 @@ const StyledLink = styled(Link)`
 
 function Header() {
   return (
-    <nav>
-      <StyledLink to="/">Accueil</StyledLink>
-      <StyledLink to="/survey/1" $isFullLink>
-        TEST
-      </StyledLink>
-      <StyledLink to="/freelances">Profils</StyledLink>
-    </nav>
+    <HeaderWrapper>
+      <img src={Logo} alt="logo" />
+      <nav>
+        <StyledLink to="/">Accueil</StyledLink>
+        <StyledLink to="/freelances">Profils</StyledLink>
+        <StyledLink to="/survey/1" $isFullLink>
+          Faire le test
+        </StyledLink>
+      </nav>
+    </HeaderWrapper>
   )
 }
 

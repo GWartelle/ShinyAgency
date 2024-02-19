@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
-import DefaultPicture from '../../assets/profile.png'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
+import DefaultPicture from '../../assets/profile.png'
 
 const CardLabel = styled.span`
-  color: ${colors.primary};
+  color: #5843e4;
   font-size: 22px;
   font-weight: bold;
 `
@@ -32,9 +32,9 @@ const CardWrapper = styled.div`
 function Card({ label, title, picture }) {
   return (
     <CardWrapper>
-        <CardLabel>{label}</CardLabel>
-        <CardImage src={picture} alt="freelance" />
-        <span>{title}</span>
+      <CardLabel>{label}</CardLabel>
+      <CardImage src={picture} alt="freelance" />
+      <span>{title}</span>
     </CardWrapper>
   )
 }
