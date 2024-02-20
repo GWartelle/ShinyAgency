@@ -1,10 +1,10 @@
 import { useContext } from 'react'
-import { ThemeContext } from '../context'
 import { createGlobalStyle } from 'styled-components'
+import { ThemeContext } from '../context'
 
 const StyledGlobalStyle = createGlobalStyle`
     * {
-        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
     }
 
     body {

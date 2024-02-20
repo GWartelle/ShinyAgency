@@ -1,7 +1,7 @@
+import { useEffect, useState } from 'react'
 import Card from '../../components/Card'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import { useState, useEffect } from 'react'
 import { Loader } from '../../utils/style/Atoms'
 
 const CardsContainer = styled.div`
@@ -27,9 +27,9 @@ const PageSubtitle = styled.h2`
   text-align: center;
   padding-bottom: 30px;
 `
-
-const StyledLoader = styled(Loader)`
-  margin: auto;
+const LoaderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 function Freelances() {
@@ -45,7 +45,7 @@ function Freelances() {
         const { freelancersList } = await response.json()
         setFreelancesList(freelancersList)
       } catch (err) {
-        console.log('===== error =====', err)
+        console.log(err)
         setError(true)
       } finally {
         setDataLoading(false)
@@ -65,7 +65,9 @@ function Freelances() {
         Chez Shiny nous réunissons les meilleurs profils pour vous.
       </PageSubtitle>
       {isDataLoading ? (
-        <StyledLoader />
+        <LoaderWrapper>
+          <Loader />
+        </LoaderWrapper>
       ) : (
         <CardsContainer>
           {freelancersList.map((profile, index) => (
