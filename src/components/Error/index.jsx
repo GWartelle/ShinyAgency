@@ -1,22 +1,37 @@
 import styled from 'styled-components'
-import Logo404 from '../../assets/404.svg'
 import colors from '../../utils/style/colors'
+import ErrorIllustration from '../../assets/404.svg'
 
-const ErrorContainer = styled.div`
-  background-color: ${colors.backgroundLight};
+const ErrorWrapper = styled.div`
+  margin: 30px;
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  background-color: ${colors.backgroundLight};
   align-items: center;
+`
+
+const ErrorTitle = styled.h1`
+  font-weight: 300;
+`
+
+const ErrorSubtitle = styled.h2`
+  font-weight: 300;
+  color: ${colors.secondary};
+`
+
+const Illustration = styled.img`
+  max-width: 800px;
 `
 
 function Error() {
   return (
-    <ErrorContainer>
-      <h2>Oups...</h2>
-      <img src={Logo404} alt="Logo erreur 404" />
-      <h2>Il semblerait qu'il y ait un problème</h2>
-    </ErrorContainer>
+    <ErrorWrapper>
+      <ErrorTitle>Oups...</ErrorTitle>
+      <Illustration src={ErrorIllustration} />
+      <ErrorSubtitle>
+        Il semblerait que la page que vous cherchez n’existe pas
+      </ErrorSubtitle>
+    </ErrorWrapper>
   )
 }
 

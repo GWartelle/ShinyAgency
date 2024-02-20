@@ -1,43 +1,57 @@
-import HomeIllustration from '../../assets/home-illustration.svg'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import { Link } from 'react-router-dom'
+import { StyledLink } from '../../utils/style/Atoms'
+import HomeIllustration from '../../assets/home-illustration.svg'
 
 const HomeWrapper = styled.div`
-  background-color: ${colors.backgroundLight};
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  padding: 50px;
-  margin: 50px;
 `
 
-const HomeTextWrapper = styled.div`
+const HomerContainer = styled.div`
+  margin: 30px;
+  background-color: ${colors.backgroundLight};
+  padding: 60px 90px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+`
+
+const LeftCol = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  flex: 1;
+  ${StyledLink} {
+    max-width: 250px;
+  }
 `
 
-const StyledLink = styled(Link)`
-  padding: 15px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 30px;
-  background-color: ${colors.primary};
+const StyledTitle = styled.h2`
+  padding-bottom: 30px;
+  max-width: 280px;
+  line-height: 50px;
+`
+
+const Illustration = styled.img`
+  flex: 1;
 `
 
 function Home() {
   return (
     <HomeWrapper>
-      <HomeTextWrapper>
-        <h1>
-          Repérez vos besoins, on s'occupe du reste, avec les meilleurs talents
-        </h1>
-        <StyledLink to="/survey/1">Faire le test</StyledLink>
-      </HomeTextWrapper>
-      <img src={HomeIllustration} alt="" />
+      <HomerContainer>
+        <LeftCol>
+          <StyledTitle>
+            Repérez vos besoins, on s’occupe du reste, avec les meilleurs
+            talents
+          </StyledTitle>
+          <StyledLink to="/survey/1" $isFullLink>
+            Faire le test
+          </StyledLink>
+        </LeftCol>
+        <Illustration src={HomeIllustration} />
+      </HomerContainer>
     </HomeWrapper>
   )
 }
