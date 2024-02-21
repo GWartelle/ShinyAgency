@@ -69,12 +69,12 @@ function Survey() {
     saveAnswers({ [questionNumber]: answer })
   }
 
-  const { data, isLoading } = useFetch('http://localhost:8000/survey')
+  const { data, isLoading, error } = useFetch('http://localhost:8000/survey')
   const { surveyData } = data
 
-  // if (error) {
-  //   return <span>Il y a un problème</span>
-  // }
+  if (error) {
+    return <span>Il y a un problème</span>
+  }
 
   return (
     <SurveyContainer>
@@ -83,6 +83,8 @@ function Survey() {
         <Loader />
       ) : (
         <QuestionContent>
+          {console.log('surveyData:', surveyData)}
+          {console.log('questionNumber:', questionNumber)}
           {surveyData && surveyData[questionNumber]}
         </QuestionContent>
       )}
