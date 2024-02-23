@@ -1,9 +1,9 @@
 import { useContext } from 'react'
-import { SurveyContext, ThemeContext } from '../../utils/context'
-import { useFetch } from '../../utils/hooks'
-import { StyledLink, Loader, LoaderWrapper } from '../../utils/style/Atoms'
-import colors from '../../utils/style/colors'
+import { SurveyContext } from '../../utils/context'
 import styled from 'styled-components'
+import colors from '../../utils/style/colors'
+import { useFetch, useTheme } from '../../utils/hooks'
+import { StyledLink, Loader } from '../../utils/style/Atoms'
 
 const ResultsContainer = styled.div`
   display: flex;
@@ -47,45 +47,50 @@ const JobDescription = styled.div`
   }
 `
 
-export function formatJobList(title, listLength, index) {
-  if (index === listLength - 1) {
-    return title
-  }
-  return `${title},`
-}
+const LoaderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`
 
 export function formatQueryParams(answers) {
   const answerNumbers = Object.keys(answers)
 
   return answerNumbers.reduce((previousParams, answerNumber, index) => {
-    const isFirstAnswer = index === 0
-    const separator = isFirstAnswer ? '' : '&'
+    const isFirstParam = index === 0
+    const separator = isFirstParam ? '' : '&'
     return `${previousParams}${separator}a${answerNumber}=${answers[answerNumber]}`
   }, '')
 }
 
+export function formatJobList(title, listLength, index) {
+  if (index === listLength - 1) {
+    return title
+  } else {
+    return `${title},`
+  }
+}
+
 function Results() {
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useTheme()
   const { answers } = useContext(SurveyContext)
   const queryParams = formatQueryParams(answers)
 
   const { data, isLoading, error } = useFetch(
-    `http://localhost:8000/results?${queryParams}`,
+    `http://localhost:8000/results?${queryParams}`
   )
-
-  console.log('===== data =====', data)
-
   if (error) {
-    return <span>Il y a un problème</span>
+    return <pre>{error}</pre>
+  } else if (isLoading) {
+    return (
+      <LoaderWrapper>
+        <Loader />
+      </LoaderWrapper>
+    )
   }
 
   const resultsData = data?.resultsData
 
-  return isLoading ? (
-    <LoaderWrapper>
-      <Loader />
-    </LoaderWrapper>
-  ) : (
+  return (
     <ResultsContainer theme={theme}>
       <ResultsTitle theme={theme}>
         Les compétences dont vous avez besoin :

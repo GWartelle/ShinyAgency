@@ -19,16 +19,16 @@ ReactDOM.render(
           <GlobalStyle />
           <Header />
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/survey/:questionNumber" element={<Survey />} />
             <Route path="/results" element={<Results />} />
             <Route path="/freelances" element={<Freelances />} />
-            <Route element={<Error />} />
+            <Route path="*" element={<Error />} />
           </Routes>
-          <Footer />
         </SurveyProvider>
+        <Footer />
       </ThemeProvider>
     </Router>
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 )

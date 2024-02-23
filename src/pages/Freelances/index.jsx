@@ -1,8 +1,8 @@
 import Card from '../../components/Card'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import { Loader, LoaderWrapper } from '../../utils/style/Atoms'
-import { useFetch } from '../../utils/hooks'
+import { Loader } from '../../utils/style/Atoms'
+import { useFetch, useTheme } from '../../utils/hooks'
 
 const CardsContainer = styled.div`
   display: grid;
@@ -15,9 +15,9 @@ const CardsContainer = styled.div`
 
 const PageTitle = styled.h1`
   font-size: 30px;
-  color: black;
   text-align: center;
   padding-bottom: 30px;
+  color: ${({ theme }) => (theme === 'light' ? '#000000' : '#ffffff')};
 `
 
 const PageSubtitle = styled.h2`
@@ -26,31 +26,39 @@ const PageSubtitle = styled.h2`
   font-weight: 300;
   text-align: center;
   padding-bottom: 30px;
+  color: ${({ theme }) => (theme === 'light' ? '#000000' : '#ffffff')};
+`
+
+const LoaderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 function Freelances() {
+  const { theme } = useTheme()
   const { data, isLoading, error } = useFetch(
-    'http://localhost:8000/freelances',
+    `http://localhost:8000/freelances`
   )
-  const { freelancersList } = data
+
+  const freelancersList = data?.freelancersList
 
   if (error) {
-    return <span>Oups il y a eu un problème</span>
+    return <pre>{error}</pre>
   }
 
   return (
     <div>
-      <PageTitle>Trouvez votre prestataire</PageTitle>
-      <PageSubtitle>
+      <PageTitle theme={theme}>Trouvez votre prestataire</PageTitle>
+      <PageSubtitle theme={theme}>
         Chez Shiny nous réunissons les meilleurs profils pour vous.
       </PageSubtitle>
       {isLoading ? (
         <LoaderWrapper>
-          <Loader />
+          <Loader theme={theme} />
         </LoaderWrapper>
       ) : (
         <CardsContainer>
-          {freelancersList.map((profile, index) => (
+          {freelancersList?.map((profile, index) => (
             <Card
               key={`${profile.name}-${index}`}
               label={profile.job}

@@ -23,7 +23,6 @@ export function useFetch(url) {
     }
     fetchData()
   }, [url])
-
   return { isLoading, data, error }
 }
 

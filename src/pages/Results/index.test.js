@@ -1,6 +1,6 @@
-import { formatJobList, formatQueryParams } from '.'
+import { formatJobList, formatQueryParams } from './'
 
-describe('The formatJobList function', () => {
+describe('The getJobTitle function', () => {
   it('should add a comma to a word', () => {
     const expectedState = 'item2,'
     expect(formatJobList('item2', 3, 1)).toEqual(expectedState)
@@ -19,7 +19,7 @@ describe('The formatQueryParams function', () => {
   it('should concatenate params with an &', () => {
     const expectedState = 'a1=answer1&a2=answer2'
     expect(formatQueryParams({ 1: 'answer1', 2: 'answer2' })).toEqual(
-      expectedState,
+      expectedState
     )
   })
 })
