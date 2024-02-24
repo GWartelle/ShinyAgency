@@ -1,36 +1,36 @@
-import Card from '.'
-import { screen, render, fireEvent } from '@testing-library/react'
+import Card from './'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { ThemeProvider } from '../../utils/context'
 
-describe('The Card component', () => {
-  it('Should have a picture and a title', async () => {
+describe('Card', () => {
+  it('Should render title and image', async () => {
     render(
       <ThemeProvider>
         <Card
-          title="Anakin Screenwalker"
-          label="The last React Jedi"
-          picture="testPicture.png"
+          title="Harry Potter"
+          label="Magicien frontend"
+          picture="/myPicture.png"
         />
-      </ThemeProvider>,
+      </ThemeProvider>
     )
     const cardPicture = screen.getByRole('img')
-    const cardTitle = screen.getByText(/Anakin/i)
-    expect(cardPicture.src).toBe('http://localhost/testPicture.png')
-    expect(cardTitle.textContent).toBe(' Anakin Screenwalker ')
+    const cardTitle = screen.getByText(/Harry/i)
+    expect(cardPicture.src).toBe('http://localhost/myPicture.png')
+    expect(cardTitle.textContent).toBe(' Harry Potter ')
   })
-  it('Should add a start around title', async () => {
+  it('Should add ⭐️ around title', async () => {
     render(
       <ThemeProvider>
         <Card
-          title="Anakin Screenwalker"
-          label="The last React Jedi"
-          picture="testPicture.png"
+          title="Harry Potter"
+          label="Magicien frontend"
+          picture="/myPicture.png"
         />
-      </ThemeProvider>,
+      </ThemeProvider>
     )
-    const cardTitle = screen.getByText(/Anakin/i)
+    const cardTitle = screen.getByText(/Harry/i)
     const parentNode = cardTitle.closest('div')
     fireEvent.click(parentNode)
-    expect(cardTitle.textContent).toBe('⭐️ Anakin Screenwalker ⭐️')
+    expect(cardTitle.textContent).toBe('⭐️ Harry Potter ⭐️')
   })
 })
