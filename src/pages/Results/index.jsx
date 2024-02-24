@@ -1,6 +1,7 @@
 import { useContext } from 'react'
-import { SurveyContext } from '../../utils/context'
 import styled from 'styled-components'
+import EmptyList from '../../components/EmptyList'
+import { SurveyContext } from '../../utils/context'
 import colors from '../../utils/style/colors'
 import { useFetch, useTheme } from '../../utils/hooks'
 import { StyledLink, Loader } from '../../utils/style/Atoms'
@@ -75,9 +76,6 @@ function Results() {
   const { answers } = useContext(SurveyContext)
   const queryParams = formatQueryParams(answers)
 
-  console.log(answers)
-  console.log(queryParams)
-
   const { data, isLoading, error } = useFetch(
     `http://localhost:8000/results?${queryParams}`
   )
@@ -87,6 +85,10 @@ function Results() {
   }
 
   const resultsData = data?.resultsData
+
+  if (resultsData?.length < 1) {
+    return <EmptyList theme={theme} />
+  }
 
   return isLoading ? (
     <LoaderWrapper>

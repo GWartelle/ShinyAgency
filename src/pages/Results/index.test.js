@@ -1,10 +1,10 @@
 import Results, { formatJobList, formatQueryParams } from './'
-import { render } from '../../utils/test'
 import { rest } from 'msw'
 import { setupServer } from 'msw/node'
-import { screen, waitForElementToBeRemoved } from '@testing-library/react'
+import { waitForElementToBeRemoved, screen } from '@testing-library/react'
+import { render } from '../../utils/test'
 
-describe('The getJobTitle function', () => {
+describe('The formatJobList function', () => {
   it('should add a comma to a word', () => {
     const expectedState = 'item2,'
     expect(formatJobList('item2', 3, 1)).toEqual(expectedState)
@@ -35,7 +35,7 @@ const resultsMockedData = [
   },
   {
     title: 'frontend',
-    description: `Le développeur(.se) frontend se charge de l'interface utilisateur`,
+    description: `Le développeur ou la développeuse frontend se charge de l'interface : interactions avec l'utilisateur, style, etc.`,
   },
 ]
 
@@ -44,13 +44,12 @@ const server = setupServer(
     return res(ctx.json({ resultsData: resultsMockedData }))
   })
 )
-
 beforeAll(() => server.listen())
 afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
 describe('The Results component', () => {
-  test('should display the results after the data is loaded', async () => {
+  it('should display the results after the data is loaded', async () => {
     render(<Results />)
     await waitForElementToBeRemoved(() => screen.getByTestId('loader'))
     const jobTitleElements = screen.getAllByTestId('job-title')
