@@ -1,6 +1,6 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import { useState } from 'react'
 
 const InputWrapper = styled.div`
   color: ${({ theme }) => (theme === 'light' ? colors.dark : 'white')};
@@ -27,7 +27,7 @@ function EmailInput({ theme }) {
 
   return (
     <InputWrapper theme={theme}>
-      <StyledLabel theme={theme}>Adresse Email</StyledLabel>
+      <StyledLabel theme={theme}>Adresse email</StyledLabel>
       <StyledInput
         theme={theme}
         onChange={(e) => setInputValue(e.target.value)}
