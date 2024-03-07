@@ -53,12 +53,12 @@
 
 ## About The Project
 
-![Shiny Agency App Screenshot][homepage-screenshot]
+![Shiny Home Page Screenshot][homepage-screenshot]
 
 This project was completed as part of the <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a> course created and distributed by OpenClassrooms.
 This project has not been deployed, and therefore, must be cloned to be used.
 <br />
-The goal of this course being to learn how to use React, the backend part of the project is
+The goal of this course being to learn how to use React, the backend part of the project is provided by OpenClassrooms.
 This is the web app of an freelance agency.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,6 +84,8 @@ To use this project, you must have <a href="https://nodejs.org/en">Node.js</a> i
 
 ### Installation
 
+To install this project, you must :
+
 1. Use your terminal to go in the directory you want to install the project in
    ```sh
    cd path/to/your/directory
@@ -92,13 +94,17 @@ To use this project, you must have <a href="https://nodejs.org/en">Node.js</a> i
    ```sh
    git clone https://github.com/GWartelle/ShinyAgency.git
    ```
-3. Run this command to install all the packages needed for the project
+3. Go in the backend directory and run the command `npm install` (or `yarn` if you have it installed) to install all the packages needed for the backend of the project
    ```sh
+   cd backend
    npm install
+   yarn
    ```
-4. Once done, run this command to open the project in your browser :
+4. Now go in the frontend directory and run the same command to install the packages for the frontend :
    ```sh
-   npm start
+   cd ../frontend
+   npm install
+   yarn
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -107,9 +113,35 @@ To use this project, you must have <a href="https://nodejs.org/en">Node.js</a> i
 
 ## Usage
 
-After landing on the Home page, you can click on the `Faire le test` button to open the quiz page.
+To use this web app you must :
 
-`IMAGE QUESTIONNAIRE`
+1. Go back into the backend directory, and run `npm start` (or `yarn start`) to start the serverside of the app :
+```sh
+cd ../backend
+npm start
+yarn start
+```
+
+2. Go back into the frontend directory, and run the same command to start the app, which will open in your browser :
+```sh
+cd ../frontend
+npm start 
+yarn start
+```
+
+This will lead you to the home page of the application. You'll see on the upper part of the page the header of the app, with its logo and links to the other pages. Downn you'll see an email input, which is here solely for demonstration sake, and a `Changer de mode` button to toggle the dark mode. 
+<br />
+On the center of the page (or in the header) if you click on the `Faire le test` button, this will open the survey page.
+
+![Shiny Survey Page Screenshot][survey-screenshot]
+
+On the survey page, once you answer all 6 of the questions, and click on `Résultats`, this will redirect to the Results page, which point you out the type of freelance you might need for your project.
+
+![Shiny Results Page Screenshot][results-screenshot]
+
+And now, if you click on `Découvrez nos profils` (or on `Profils` in the header), you are redirected to the Profiles page, with fictive profiles of freelancers, which you can select based on your needs.
+
+![Shiny Profiles Page Screenshot][profiles-screenshot]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +165,7 @@ This project was made possible thanks to <a href="https://openclassrooms.com/fr/
 
 ## Contact
 
-Link to my LinkedIn :
+Link to my LinkedIn profile :
 <br />
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -142,9 +174,10 @@ Link to my LinkedIn :
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/gabriel-wartelle/
 [homepage-screenshot]: images/HomePage_Screen.png
+[survey-screenshot]: images/Survey_Screen.png
+[results-screenshot]: images/Results_Screen.png
+[profiles-screenshot]: images/Profiles_Screen.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://react.dev/
 [CreateReactApp.dev]: https://img.shields.io/badge/Create_React_App-373D47?style=for-the-badge&logo=createreactapp&logoColor=5EDBB6
@@ -157,3 +190,5 @@ Link to my LinkedIn :
 [Jest-url]: https://styled-components.com/
 [TestingLibrary.com]: https://img.shields.io/badge/Testing_Library-212121?style=for-the-badge&logo=testinglibrary&logoColor=DB0B00
 [TestingLibrary-url]: https://testing-library.com/
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/gabriel-wartelle/
