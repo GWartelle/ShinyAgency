@@ -7,15 +7,6 @@
 *** And don't forget to give his project a star!
 -->
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 <!-- PROJECT TITLE -->
 <br />
 <div align="center">
@@ -53,7 +44,7 @@
 
 ## About The Project
 
-![Shiny Home Page Screenshot][homepage-screenshot]
+![Shiny Home Page Screenshot](images/HomePage_Screen.png)
 
 This project was completed as part of the <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a> course created and distributed by OpenClassrooms.
 This project has not been deployed, and therefore, must be cloned to be used.
@@ -65,12 +56,12 @@ And as the goal is to learn how to use React, the backend part of the project is
 
 ### Built With
 
-- [![React][React.js]][React-url]
-- [![CreateReactApp][CreateReactApp.dev]][CreateReactApp-url]
-- [![ReactRouter][ReactRouter.com]][ReactRouter-url]
-- [![StyledComponents][StyledComponents.com]][StyledComponents-url]
-- [![Jest][Jest.js]][Jest-url]
-- [![TestingLibrary][TestingLibrary.com]][TestingLibrary-url]
+- [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)](https://react.dev/)
+- [![CreateReactApp](https://img.shields.io/badge/Create_React_App-373D47?style=for-the-badge&logo=createreactapp)](https://create-react-app.dev/)
+- [![ReactRouter](https://img.shields.io/badge/React_Router-1C1C1C?style=for-the-badge&logo=reactrouter)](https://reactrouter.com/en/main)
+- [![StyledComponents](https://img.shields.io/badge/Styled_Components-C44DA8?style=for-the-badge&logo=styledcomponents&logoColor=FFF)](https://styled-components.com/)
+- [![Jest](https://img.shields.io/badge/Jest-27CC02?style=for-the-badge&logo=jest&logoColor=FFF)](https://jestjs.io/)
+- [![TestingLibrary](https://img.shields.io/badge/Testing_Library-212121?style=for-the-badge&logo=testinglibrary)](https://testing-library.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,15 +126,15 @@ This will lead you to the home page of the application. You'll find in the heade
 <br />
 On the center of the page (and in the header) if you click on the `Faire le test` button, this will open up the survey page.
 
-![Shiny Survey Page Screenshot][survey-screenshot]
+![Shiny Survey Page Screenshot](images/Survey_Screen.png)
 
 On the survey page, once you answer all 6 of the questions, and click on `Résultats`, this will redirect you to the Results page, which points you out the type of freelance you might need for your project.
 
-![Shiny Results Page Screenshot][results-screenshot]
+![Shiny Results Page Screenshot](images/Results_Screen.png)
 
 And now, if you click on `Découvrez nos profils` (or on `Profils` in the header), you will be redirected to the Profiles page, with examples of freelancer profiles, which you can select based on your needs.
 
-![Shiny Profiles Page Screenshot][profiles-screenshot]
+![Shiny Profiles Page Screenshot](images/Profiles_Screen.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,25 +165,3 @@ Link to my LinkedIn profile :
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[homepage-screenshot]: images/HomePage_Screen.png
-[survey-screenshot]: images/Survey_Screen.png
-[results-screenshot]: images/Results_Screen.png
-[profiles-screenshot]: images/Profiles_Screen.png
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://react.dev/
-[CreateReactApp.dev]: https://img.shields.io/badge/Create_React_App-373D47?style=for-the-badge&logo=createreactapp&logoColor=5EDBB6
-[CreateReactApp-url]: https://create-react-app.dev/
-[ReactRouter.com]: https://img.shields.io/badge/React_Router-1C1C1C?style=for-the-badge&logo=reactrouter&logoColor=DB0B00
-[ReactRouter-url]: https://reactrouter.com/en/main
-[StyledComponents.com]: https://img.shields.io/badge/Styled_Components-BF4F74?style=for-the-badge&logo=styledcomponents&logoColor=FFFFFF
-[StyledComponents-url]: https://styled-components.com/
-[Jest.js]: https://img.shields.io/badge/Jest-27CC02?style=for-the-badge&logo=jest&logoColor=FFFFFF
-[Jest-url]: https://jestjs.io/
-[TestingLibrary.com]: https://img.shields.io/badge/Testing_Library-212121?style=for-the-badge&logo=testinglibrary&logoColor=DB0B00
-[TestingLibrary-url]: https://testing-library.com/
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-2C68D1?style=for-the-badge&logo=linkedin&logoColor=FFF
-[linkedin-url]: https://www.linkedin.com/in/gabriel-wartelle/
