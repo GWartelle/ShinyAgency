@@ -165,7 +165,7 @@ Distributed under the CC License. See <a href="https://creativecommons.org/licen
 
 ## Acknowledgments
 
-This project was made possible thanks to <a href="https://openclassrooms.com/fr/">Openclassrooms</a>, therefore if you are interested in knowing more about how this app was made, I invite you to go check the course <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a>, or <a href="https://openclassrooms.com/fr/courses/">any of their courses</a>, if you want to discover the rest of their catalog.
+This project was made possible thanks to <a href="https://openclassrooms.com/fr/">Openclassrooms</a>, therefore if you are interested in knowing more about how this app was made, I invite you to go check the course <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a>, or <a href="https://openclassrooms.com/fr/courses/">any of their courses</a> if you want to discover the rest of their catalog.
 
 Thank you a lot for reading through all this ! Have a great day 😉
 
