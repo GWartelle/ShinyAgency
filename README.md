@@ -8,7 +8,6 @@
 -->
 
 <!-- PROJECT TITLE -->
-<br />
 <div align="center">
   <a href="https://github.com/GWartelle/ShinyAgency">
     <img src="images/light-logo.png" alt="ShinyLogo"  height="70">
@@ -48,7 +47,7 @@
 
 This project was completed as part of the <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a> course created and distributed by OpenClassrooms.
 This project has not been deployed, and therefore, must be cloned to be used.
-<br />
+
 The goal of this project is to build the web page of a freelance agency, using React.
 And as the goal is to learn how to use React, the backend part of the project is directly provided by OpenClassrooms.
 
@@ -123,7 +122,7 @@ yarn start
 ```
 
 This will lead you to the home page of the application. You'll find in the header of the page the logo of the app on the left and the navigation bar on the right. Downn you'll see an email input, which is here solely for demonstration sake, and a `Changer de mode` button to toggle on/off the dark mode.
-<br />
+
 On the center of the page (and in the header) if you click on the `Faire le test` button, this will open up the survey page.
 
 ![Shiny Survey Page Screenshot](images/Survey_Screen.png)
@@ -161,7 +160,7 @@ Thank you a lot for reading through all this ! Have a great day 😉
 ## Contact
 
 Link to my LinkedIn profile :
-<br />
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-2C68D1?style=for-the-badge&logo=linkedin&&logoColor=FFF)](https://www.linkedin.com/in/gabriel-wartelle/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
