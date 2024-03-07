@@ -194,5 +194,5 @@ Link to my LinkedIn profile :
 [Jest-url]: https://jestjs.io/
 [TestingLibrary.com]: https://img.shields.io/badge/Testing_Library-212121?style=for-the-badge&logo=testinglibrary&logoColor=DB0B00
 [TestingLibrary-url]: https://testing-library.com/
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-2C68D1?style=for-the-badge&logo=linkedin&logoColor=FFF
 [linkedin-url]: https://www.linkedin.com/in/gabriel-wartelle/
