@@ -90,12 +90,18 @@ To install this project, you must :
    ```sh
    cd backend
    npm install
+   ```
+   ```sh
+   cd backend
    yarn
    ```
 4. Go in the frontend directory and run the same command to install the packages for the frontend :
    ```sh
    cd ../frontend
    npm install
+   ```
+   ```sh
+   cd ../frontend
    yarn
    ```
 
@@ -112,6 +118,10 @@ To use this web app you must :
 ```sh
 cd ../backend
 npm start
+```
+
+```sh
+cd ../backend
 yarn start
 ```
 
@@ -120,6 +130,10 @@ yarn start
 ```sh
 cd ../frontend
 npm start
+```
+
+```sh
+cd ../frontend
 yarn start
 ```
 
