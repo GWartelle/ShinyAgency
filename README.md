@@ -58,8 +58,8 @@
 This project was completed as part of the <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a> course created and distributed by OpenClassrooms.
 This project has not been deployed, and therefore, must be cloned to be used.
 <br />
-The goal of this course being to learn how to use React, the backend part of the project is provided by OpenClassrooms.
-This is the web app of an freelance agency.
+The goal of this project is to build the web page of a freelance agency, using React.
+And as the goal is to learn how to use React, the backend part of the project is directly provided by OpenClassrooms.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,13 +80,13 @@ This is the web app of an freelance agency.
 
 ### Prerequisites
 
-To use this project, you must have <a href="https://nodejs.org/en">Node.js</a> installed, and also <a href="https://git-scm.com/downloads">Git</a> if you want to clone this repository.
+To use this project, you must have <a href="https://nodejs.org/en">Node.js</a> installed, and also <a href="https://git-scm.com/downloads">Git</a> if you want to clone this repository. You can also use <a href="https://yarnpkg.com/">Yarn</a>, if you prefer it over npm.
 
 ### Installation
 
 To install this project, you must :
 
-1. Use your terminal to go in the directory you want to install the project in
+1. Use your terminal to go in the directory you want to install the project in :
    ```sh
    cd path/to/your/directory
    ```
@@ -94,13 +94,13 @@ To install this project, you must :
    ```sh
    git clone https://github.com/GWartelle/ShinyAgency.git
    ```
-3. Go in the backend directory and run the command `npm install` (or `yarn` if you have it installed) to install all the packages needed for the backend of the project
+3. Go in the backend directory and run the command `npm install` (or `yarn` if you installed it) to install all the packages needed for the backend of the project :
    ```sh
    cd backend
    npm install
    yarn
    ```
-4. Now go in the frontend directory and run the same command to install the packages for the frontend :
+4. Go in the frontend directory and run the same command to install the packages for the frontend :
    ```sh
    cd ../frontend
    npm install
@@ -123,7 +123,7 @@ npm start
 yarn start
 ```
 
-2. Go back into the frontend directory, and run the same command to start the app, which will open in your browser :
+2. Go back into the frontend directory, and run the same command to start the app, which will open up in your browser :
 
 ```sh
 cd ../frontend
@@ -131,17 +131,17 @@ npm start
 yarn start
 ```
 
-This will lead you to the home page of the application. You'll see on the upper part of the page the header of the app, with its logo and links to the other pages. Downn you'll see an email input, which is here solely for demonstration sake, and a `Changer de mode` button to toggle the dark mode.
+This will lead you to the home page of the application. You'll find in the header of the page the logo of the app on the left and the navigation bar on the right. Downn you'll see an email input, which is here solely for demonstration sake, and a `Changer de mode` button to toggle on/off the dark mode.
 <br />
-On the center of the page (or in the header) if you click on the `Faire le test` button, this will open the survey page.
+On the center of the page (and in the header) if you click on the `Faire le test` button, this will open up the survey page.
 
 ![Shiny Survey Page Screenshot][survey-screenshot]
 
-On the survey page, once you answer all 6 of the questions, and click on `Résultats`, this will redirect to the Results page, which point you out the type of freelance you might need for your project.
+On the survey page, once you answer all 6 of the questions, and click on `Résultats`, this will redirect you to the Results page, which points you out the type of freelance you might need for your project.
 
 ![Shiny Results Page Screenshot][results-screenshot]
 
-And now, if you click on `Découvrez nos profils` (or on `Profils` in the header), you are redirected to the Profiles page, with fictive profiles of freelancers, which you can select based on your needs.
+And now, if you click on `Découvrez nos profils` (or on `Profils` in the header), you will be redirected to the Profiles page, with examples of freelancer profiles, which you can select based on your needs.
 
 ![Shiny Profiles Page Screenshot][profiles-screenshot]
 
@@ -159,7 +159,9 @@ Distributed under the CC License. See <a href="https://creativecommons.org/licen
 
 ## Acknowledgments
 
-This project was made possible thanks to <a href="https://openclassrooms.com/fr/">Openclassrooms</a>, therefore if you are interested in knowing more about it, I invite you to go check the course <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a>, or <a href="https://openclassrooms.com/fr/courses/">any of their courses</a>, if you want to discover the rest of their catalog.
+This project was made possible thanks to <a href="https://openclassrooms.com/fr/">Openclassrooms</a>, therefore if you are interested in knowing more about how this app was made, I invite you to go check the course <a href="https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete">"Créez une application React complète"</a>, or <a href="https://openclassrooms.com/fr/courses/">any of their courses</a>, if you want to discover the rest of their catalog.
+
+Thank you a lot for reading through all this ! Have a great day 😉
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
