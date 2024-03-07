@@ -8,6 +8,7 @@
 -->
 
 <!-- PROJECT TITLE -->
+
 <div align="center">
   <a href="https://github.com/GWartelle/ShinyAgency">
     <img src="images/light-logo.png" alt="ShinyLogo"  height="70">
@@ -16,6 +17,7 @@
 <h1 align="center">Shiny Agency</h1>
 
 <!-- TABLE OF CONTENTS -->
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -55,12 +57,12 @@ And as the goal is to learn how to use React, the backend part of the project is
 
 ### Built With
 
-- [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)](https://react.dev/)
-- [![CreateReactApp](https://img.shields.io/badge/Create_React_App-373D47?style=for-the-badge&logo=createreactapp)](https://create-react-app.dev/)
-- [![ReactRouter](https://img.shields.io/badge/React_Router-1C1C1C?style=for-the-badge&logo=reactrouter)](https://reactrouter.com/en/main)
-- [![StyledComponents](https://img.shields.io/badge/Styled_Components-C44DA8?style=for-the-badge&logo=styledcomponents&logoColor=FFF)](https://styled-components.com/)
-- [![Jest](https://img.shields.io/badge/Jest-27CC02?style=for-the-badge&logo=jest&logoColor=FFF)](https://jestjs.io/)
-- [![TestingLibrary](https://img.shields.io/badge/Testing_Library-212121?style=for-the-badge&logo=testinglibrary)](https://testing-library.com/)
+- [![React](https://img.shields.io/badge/React-149ECA?style=for-the-badge&logo=react&logoColor=FFF)](https://react.dev/)
+- [![CreateReactApp](https://img.shields.io/badge/Create_React_App-09D3AC?style=for-the-badge&logo=createreactapp&logoColor=FFF)](https://create-react-app.dev/)
+- [![ReactRouter](https://img.shields.io/badge/React_Router-F44250?style=for-the-badge&logo=reactrouter&logoColor=FFF)](https://reactrouter.com/en/main)
+- [![StyledComponents](https://img.shields.io/badge/Styled_Components-FA96DE?style=for-the-badge&logo=styledcomponents&logoColor=000)](https://styled-components.com/)
+- [![Jest](https://img.shields.io/badge/Jest-15C213?style=for-the-badge&logo=jest&logoColor=FFF)](https://jestjs.io/)
+- [![TestingLibrary](https://img.shields.io/badge/Testing_Library-FC4444?style=for-the-badge&logo=testinglibrary&logoColor=FFF)](https://testing-library.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,8 +161,8 @@ Thank you a lot for reading through all this ! Have a great day 😉
 
 ## Contact
 
-Link to my LinkedIn profile :
+If you'd like to get in touch with me, feel free to reach out on LinkedIn :
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-2C68D1?style=for-the-badge&logo=linkedin&&logoColor=FFF)](https://www.linkedin.com/in/gabriel-wartelle/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&&logoColor=FFF)](https://www.linkedin.com/in/gabriel-wartelle/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
