@@ -116,6 +116,7 @@ To install this project, you must :
 To use this web app you must :
 
 1. Go back into the backend directory, and run `npm start` (or `yarn start`) to start the serverside of the app :
+
 ```sh
 cd ../backend
 npm start
@@ -123,13 +124,14 @@ yarn start
 ```
 
 2. Go back into the frontend directory, and run the same command to start the app, which will open in your browser :
+
 ```sh
 cd ../frontend
-npm start 
+npm start
 yarn start
 ```
 
-This will lead you to the home page of the application. You'll see on the upper part of the page the header of the app, with its logo and links to the other pages. Downn you'll see an email input, which is here solely for demonstration sake, and a `Changer de mode` button to toggle the dark mode. 
+This will lead you to the home page of the application. You'll see on the upper part of the page the header of the app, with its logo and links to the other pages. Downn you'll see an email input, which is here solely for demonstration sake, and a `Changer de mode` button to toggle the dark mode.
 <br />
 On the center of the page (or in the header) if you click on the `Faire le test` button, this will open the survey page.
 
@@ -187,7 +189,7 @@ Link to my LinkedIn profile :
 [StyledComponents.com]: https://img.shields.io/badge/Styled_Components-BF4F74?style=for-the-badge&logo=styledcomponents&logoColor=FFFFFF
 [StyledComponents-url]: https://styled-components.com/
 [Jest.js]: https://img.shields.io/badge/Jest-27CC02?style=for-the-badge&logo=jest&logoColor=FFFFFF
-[Jest-url]: https://styled-components.com/
+[Jest-url]: https://jestjs.io/
 [TestingLibrary.com]: https://img.shields.io/badge/Testing_Library-212121?style=for-the-badge&logo=testinglibrary&logoColor=DB0B00
 [TestingLibrary-url]: https://testing-library.com/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
