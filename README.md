@@ -35,9 +35,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -153,14 +153,6 @@ And now, if you click on `Découvrez nos profils` (or on `Profils` in the header
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
-
-## License
-
-Distributed under the CC License. See <a href="https://creativecommons.org/licenses/by-sa/4.0/">creativecommons.org</a> for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgments
@@ -175,8 +167,14 @@ Thank you a lot for reading through all this ! Have a great day 😉
 
 ## Contact
 
-If you'd like to get in touch with me, feel free to reach out on LinkedIn :
+If you'd like to get in touch with me, feel free to reach out on [LinkedIn](https://www.linkedin.com/in/gabriel-wartelle/).
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&&logoColor=FFF)](https://www.linkedin.com/in/gabriel-wartelle/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the CC License. See <a href="https://creativecommons.org/licenses/by-sa/4.0/">creativecommons.org</a> for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
