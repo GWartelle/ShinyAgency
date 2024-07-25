@@ -10,7 +10,7 @@
 <!-- PROJECT TITLE -->
 
 <div align="center">
-  <a href="https://github.com/GWartelle/ShinyAgency">
+  <a href="https://github.com/GWartelle/ShinyAgency" target="_blank" rel="noopener noreferrer">
     <img src="images/light-logo.png" alt="ShinyLogo"  height="70">
   </a>
 </div>
